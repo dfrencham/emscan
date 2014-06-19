@@ -6,6 +6,7 @@ Setup
 3. Download and unzip the release to a folder
 4. Edit the emscan.cfg config file with appropriate values. Refer to the "Finding the X/Y Co-ordinates" section. Ensure all paths are correct.
 5. Add the cron entries.
+6. Set permissions on the .pl scripts: chmod 755 *.pl
 
 Finding the X/Y Co-ordinates
 ----------------------------
