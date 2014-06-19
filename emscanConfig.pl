@@ -8,6 +8,7 @@
 #
 
 use Config::Simple;
+use File::Path qw(make_path);
 
 my $emscan_version = "v1.0.0";
 
@@ -55,7 +56,10 @@ sub load_config
 	}
 	if (!(-d $cfg->param("PhotoDir"))) 
 	{
-		mkdir $cfg->param("PhotoDir") or die "Could not create photo directory: ".$cfg->param("PhotoDir")." $!";
+		make_path($cfg->param("PhotoDir"), {
+      		verbose => 1,
+      		mode => 0711,
+  		}) or die "Could not create photo directory: ".$cfg->param("PhotoDir")." $!";
 	}
 	if (!(-e $cfg->param("MeterCSVPath"))) 
 	{
