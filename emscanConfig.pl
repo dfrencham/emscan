@@ -53,6 +53,10 @@ sub load_config
 	{
 		die "UVC does not exist (or I don't have permissions) at path: ".$cfg->param('UVCCapturePath')." $!";
 	}
+	if (!(-d $cfg->param("PhotoDir"))) 
+	{
+		mkdir $cfg->param("PhotoDir") or die "Could not create photo directory: ".$cfg->param("PhotoDir")." $!";
+	}
 	if (!(-e $cfg->param("MeterCSVPath"))) 
 	{
 		open HANDLE, ">>$cfg->param('MeterCSVPath')" or die "Could not create Meter CSV file at path: ".$cfg->param('MeterCSVPath')." $!\n"; 
