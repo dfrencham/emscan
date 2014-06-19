@@ -8,8 +8,7 @@ A collection of Perl scripts to OCR a power meter via a webcam, and upload to PV
 
 These scripts currently run on a Raspberry Pi (running Rasbian), but should work on almost any Linux distribution.
 
-Setup Instructions
-==================
+###Setup Instructions
 
 [Full Setup Instructions Here](../master/SETUP.md)
 
