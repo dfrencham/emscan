@@ -1,5 +1,5 @@
-emscan - EM1000 OCR Meter Reader
-================================
+Emscan - OCR Meter Reader
+=========================
 
 Overview
 ---------
@@ -11,8 +11,7 @@ These scripts currently run on a Raspberry Pi (running Rasbian), but should work
 Setup Instructions
 ==================
 
-[Full Setup Instructions Here](blob/master/SETUP.md)
-
+[Full Setup Instructions Here](../blob/master/SETUP.md)
 
 ###What it Does
 
